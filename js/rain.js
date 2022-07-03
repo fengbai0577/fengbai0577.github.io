@@ -21,5 +21,5 @@ setInterval(function(){
             clearInterval(timer);
             rain.parentNode.removeChild(rain);
         }
-    }, 15)	//每隔一段时间雨滴下落一次
-}, 50)		//每隔一段时间生成一次雨滴
+    }, 10)	//每隔一段时间雨滴下落一次
+}, 20)		//每隔一段时间生成一次雨滴
