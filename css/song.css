@@ -1,0 +1,135 @@
+#myAudio{
+    display:none;
+}
+
+.song-player{
+    position: relative;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.song-control{
+    width: 300px;
+    height: 80px;
+    background: #3A5C82;
+    border-radius: 15px;
+    position: relative;
+}
+
+.song-alarm{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: #fff;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.song-alarm::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    border-radius: 50%;
+    background: url(../img/001.jpeg) no-repeat center center;
+    background-size: 100%;
+}
+
+/* 音响 */
+.song-control.active .song-alarm::before{
+    animation: rotateF 3s infinite linear;
+}
+
+@keyframes rotateF{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.song-alarm::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.song-buts{
+    display:flex;
+    justify-content: flex-end;
+    height: 80px;
+    padding: 0 15px;
+}
+
+.song-prev,.song-play,.song-next{
+    width: 55px;
+    height: auto;
+    border-radius: 10px;
+    background: #000;
+    cursor: pointer;
+}
+
+/* .prev:hover,.play:hover,.next:hover{
+    background: #eee;
+} */
+
+.song-prev{
+    background: url(../img/prev.png) no-repeat center center;
+    background-size: 20px;
+}
+
+.song-play{
+    background: url(../img/play.png) no-repeat center center;
+    background-size: 20px;
+}
+
+.song-next{
+    background: url(../img/next.png) no-repeat center center;
+    background-size: 20px;
+}
+
+/* 播放时 */
+.song-control.active .song-play{
+    background: url(../img/play1.png) no-repeat center center;
+    background-size: 20px;
+}
+
+.song-info{
+    opacity: 0;
+    position: absolute;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.5);
+    padding: 5px 15px 5px 110px;
+    border-radius: 15px;
+}
+
+.song-info.active{
+    opacity: 1;
+}
+
+.song-song{
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.song-name{
+    font-size: 12px;
+    color: #ccc;
+}

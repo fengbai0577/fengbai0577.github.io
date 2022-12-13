@@ -1,0 +1,175 @@
+.grid{
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-around;
+}
+
+.grid-cell-1{
+	flex: 1 1 auto;
+}
+
+.grid-cell-2{
+	flex: 2 1 auto;
+}
+
+.grid-cell-3{
+	flex: 3 1 auto;
+}
+
+.grid-cell-4{
+	flex: 4 1 auto;
+}
+
+.grid-cell-5{
+	flex: 5 1 auto;
+}
+
+.grid-cell-6{
+	flex: 6 1 auto;
+}
+
+.grid-cell-7{
+	flex: 7 1 auto;
+}
+
+.grid-cell-8{
+	flex: 8 1 auto;
+}
+/*图标*/
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  }
+   
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+/*首页样式*/
+
+body{
+    background:url('../img/bg.jpg');
+    background-size: cover;
+}
+
+#nav{
+    width:100%;
+    height:80px;
+    background-color: rgb(65, 65, 65);
+    opacity: 0.8;
+    position:fixed;
+    
+}
+
+.nav-cont{
+    width:65%;
+    margin:0 auto;
+}
+
+.logo{
+    height: 80px;
+    line-height: 80px;
+    color:aliceblue;
+    text-align: center;
+}
+
+.logo span{
+    font-family: "宋体";
+    font-size: 2em;
+}
+
+.nav-me{
+    height: 80px;
+}
+
+.nav-text,a{
+    line-height: 80px;
+    height:80px;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "楷体";
+    color: azure;
+}
+
+.nav-text:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.cont-bg{
+    width:65%;
+    height:65%;
+    border-radius: 8px;
+    background-color: aliceblue;
+    background:rgba(255,255,255,0.3);
+    margin: 0 auto;
+    position: relative;
+    top:180px;
+    padding-top: 80px;
+}
+
+.pic{
+    width:200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.pic img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.text{
+    padding-top:80px;
+    padding-bottom:80px;
+    text-align: center;
+    color: black;
+}
+
+.big{
+    font-size: 3em;
+    font-style: italic;
+    font-family: "宋体";
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.liter{
+    font-size: 16px;
+    text-decoration: none;
+    font-style: none;
+}
+
+#song{
+    width: auto;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+@media screen and (max-width:767px) {
+    body{
+        background:url('../img/az-bg.jpeg');
+        background-size: cover;
+    }
+
+    .cont-bg{
+        background: none;
+    }
+
+    .text{
+        color:white;
+    }
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caery</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/song.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/rain.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <!--导航部分-->
+    <div id="nav" style="display: none;">
+        <div class="grid nav-cont">
+            <div class="grid-cell-1 logo">
+                <span>Caery</span>
+            </div>
+            <div class="grid-cell-3 nav-me"></div>
+            <div class="grid-cell-8 grid nav-me">
+                <div class="grid-cell-2 nav-text">
+                    <span class="glyphicon glyphicon-home"></span>首页
+                </div>
+                <div class="grid-cell-2 nav-text">
+                    <span class="glyphicon glyphicon-picture"></span>照片墙
+                </div>
+                <div class="grid-cell-2 nav-text">
+                    <span class="glyphicon glyphicon-comment"></span>留言板
+                </div>
+                <div class="grid-cell-2 nav-text">
+                    <span class="glyphicon glyphicon-tag"></span>资源站
+                </div>
+                <div class="grid-cell-2 nav-text">
+                    <span class="glyphicon glyphicon-user"></span>关于我
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--首页中间内容-->
+    <div class="cont-bg">
+        <div class="pic">
+            <img src="./img/touxiang.png" alt="头像">
+        </div>
+        <div class="text">
+            <p class="big">无悔，亦无念</p>
+            <p class="liter">做好自己</p>
+        </div>
+    </div>
+
+    <div id="song">
+        <!-- 播放器 -->
+        <audio id="myAudio" autoplay="autoplay">
+            <source src="song/晴天 - 周杰伦.mp3">
+        </audio>
+
+        <div class="song-player">
+            <!-- 播放信息 -->
+            <div class="song-info active" id="song-info">
+                <div class="song-song">晴天</div>
+                <div class="song-name">Jay·周杰伦</div>
+            </div>
+            <!-- 控件 -->
+            <div class="song-control active" id="song-control">
+                <div class="song-alarm"></div>
+                <div class="song-buts">
+                    <div class="song-prev"></div>
+                    <div id="song-play" class="song-play"></div>
+                    <div class="song-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/click.js"></script>
+    <script src="js/song.js"></script>
+</body>
+</html>
